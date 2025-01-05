@@ -13,7 +13,7 @@ const ContactForm = () => {
     e.preventDefault();
     setStatus('Sending...');
     try {
-      await axios.post('http://localhost:5000/send-email', formData);
+      await axios.post('/api/send-email', formData);
       setStatus('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
