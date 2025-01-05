@@ -15,10 +15,10 @@ export default async (req, res) => {
     });
 
     const mailOptions = {
-      from: email, // Sender's email
-      to: 'ahsanullahfarooqi73@gmail.com', // Your Gmail email
-      subject: `Message from ${name}`,
-      text: message,
+      from: email,
+      to: 'ahsanullahfarooqi73@gmail.com',
+      subject: `New message from ${name}`,
+      text: `You have a new message from your website:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
 
     try {
